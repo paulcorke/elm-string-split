@@ -1,0 +1,15 @@
+{
+    "version": "1.0.0",
+    "summary": "Split strings into chunks",
+    "repository": "https://github.com/circuithub/elm-string-split.git",
+    "license": "MIT",
+    "source-directories": [
+        "src"
+    ],
+    "exposed-modules": [
+        "String.Split"
+    ],
+    "dependencies": {
+        "elm-lang/core": "1.1.0 <= v < 2.0.0"
+    }
+}
