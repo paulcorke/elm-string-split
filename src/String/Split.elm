@@ -11,7 +11,7 @@ import List
 
 {-| Split string into smaller strings of length `k`, starting from the left.
 
-    chunksOfLeft "abcdefgh" = ["abc", "def", "gh"]
+    chunksOfLeft 3 "abcdefgh" = ["abc", "def", "gh"]
 -}
 chunksOfLeft : Int -> String -> List String
 chunksOfLeft k s =
@@ -22,7 +22,7 @@ chunksOfLeft k s =
 
 {-| Split string into smaller strings of length `k`, starting from the right.
 
-    chunksOfRight "abcdefgh" = ["ab", "cde", "fgh"]
+    chunksOfRight 3 "abcdefgh" = ["ab", "cde", "fgh"]
 -}
 chunksOfRight : Int -> String -> List String
 chunksOfRight k s =
