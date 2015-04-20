@@ -6,7 +6,7 @@ module String.Split where
 
 -}
 
-import String (..)
+import String exposing (..)
 import List
 
 {-| Split string into smaller strings of length `k`, starting from the left.
