@@ -32,6 +32,9 @@ chunksOfRight k s =
         if length s' > k2
         then right k s' :: chunksOfR (dropRight k s')
         else right k s' :: [dropRight k s']
-  in  if  | len > k2    -> List.reverse (chunksOfR s)
-          | len > k     -> dropRight k s :: [right k s]
-          | otherwise   -> [s]
+  in  if len > k2 then
+          List.reverse (chunksOfR s)
+      else if len > k then
+          dropRight k s :: [right k s]
+      else
+          [s]
