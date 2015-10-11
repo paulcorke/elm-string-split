@@ -1,5 +1,5 @@
 {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "summary": "Split strings into chunks",
     "repository": "https://github.com/circuithub/elm-string-split.git",
     "license": "MIT",
