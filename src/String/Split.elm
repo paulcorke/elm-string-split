@@ -1,4 +1,4 @@
-module String.Split where
+module String.Split exposing (..)
 {-| Split strings into chunks
 
 # Splitters
@@ -28,10 +28,10 @@ chunksOfRight : Int -> String -> List String
 chunksOfRight k s =
   let len = length s
       k2 = 2 * k
-      chunksOfR s' =
-        if length s' > k2
-        then right k s' :: chunksOfR (dropRight k s')
-        else right k s' :: [dropRight k s']
+      chunksOfR s_ =
+        if length s_ > k2
+        then right k s_ :: chunksOfR (dropRight k s_)
+        else right k s_ :: [dropRight k s_]
   in  if len > k2 then
           List.reverse (chunksOfR s)
       else if len > k then
